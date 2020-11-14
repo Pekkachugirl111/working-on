@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title> Travel to Beaches!!! </title>
+
+        <link rel="stylesheet" type="text/css" href="home.css">
+
+    </head>
+
+    <body>
+
+        <div class="header1">
+            <h1> My Website</h1>
+            <p>About your website</p>  
+        </div>
+
+        <div class="header-image">
+            <h1> My Website</h1>
+            <p>About your website</p>  
+        </div>      
+
+        <div class="topnav">
+            <a href="home.html"> <img src="img1.jpg" class="resize-home-icon"> </a>   
+            <a href="about.html"> About Me </a>  
+            <!-- Anchor-something that will make page jump to another location inside the page -->
+            <a href="#gallery"> Gallery</a>
+        </div>
+
+        <!---Create a card and add components-image/video -->
+        <div class="main">
+            <div class="leftcol">
+                <div style="background-color: cyan;" class="card1"> 
+                <h2> Images</h2> 
+                <img class="card-img" src="img1.jpg">
+
+                <div>
+                    <p> This is a description of the image</p>
+                </div>
+                </div>
+                
+            </div>
+
+            <div class="rightcol">
+                <div class="card2">
+                    <h2> Social media links</h2>
+                    <img src="ocean.JPG" class="social-media">
+                    <img src="ocean.JPG" class="social-media">
+                    <img src="ocean.JPG" class="social-media">
+                </div>
+           
+            <div class="container">
+ 
+                <img src="ocean.jpg" class="fade" style="width:100%">
+
+<div class="text"> John Doe 
+</div>
+
+            </div>
+           
+           
+            </div>
+        </div>
+
+        <div class="for-videos"> 
+            <p id="gallery" class="text-style"> Gallery View</p>
+
+            <iframe class="shape" width="460" height="315" src="https://www.youtube.com/embed/3Ay4Sk7NRCY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="shape" width="460" height="315" src="https://www.youtube.com/embed/0VIhza1IyE0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="shape" width="560" height="315" src="https://www.youtube.com/embed/n8mj-MG9hMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" style="display:block;"> Top </button>
+
+        <footer>
+            <h3> This site belongs to Outschool media  © 2020 </h3>
+        </footer>
+   
+
+<script>
+
+//get the button
+var mybutton = document.getElementById("myBtn");
+
+ //when you scroll down to 20px from top of the screen
+ window.onscroll=function() {scrollFunction()};
+
+function scrollFunction()
+{
+    if(document.body.scrollTop >20 || document.documentElement.scrollTop >20)
+                {
+                    mybutton.style.display="block";
+                }
+                else{
+                    mybutton.style.display="none";
+                }
+
+}
+
+//click of the button
+function topFunction()
+{
+document.body.scrollTop=0;
+document.documentElement.scrollTop=0;
+
+}
+
+</script>
+
+
+   
+    </body>
+
+
+</html>

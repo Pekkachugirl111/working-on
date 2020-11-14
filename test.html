@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+</head>
+<body>
+
+    <p id="add"> </p>
+    <p id="name"> </p>
+    <p id="car"></p>
+
+    <button onclick="document.getElementById('myButton').innerHTML=Date()"> 
+        The current date and time is: 
+    </button>
+
+    <p id="myButton"></p>
+ 
+<p id="product"></p>
+
+</body>
+    
+    
+
+<script>
+    //variables
+    var x=5;
+    var y=6;
+    var z= x+y;
+    
+    document.getElementById("add").innerHTML = "the value of z is" + z;
+    
+    //String
+    var firstName= "John";
+    var secondName= "Doe";
+    var fullName = firstName + secondName; 
+
+
+
+
+    document.getElementById("Name").innerHTML= fullName
+    
+    //objects - group of variables which add to a common purpose
+    //aceessed as object property
+    var car = {model:"BMW", color:"Black", mileage:35}
+
+    document.getElementById("car").innerHTML = "The car details is:"+ car.model+" "+ car.color+ " "+car.mileage;
+
+
+//functions
+
+function product (p1,p2)
+
+{
+return p1*p2;
+}
+
+    </script>
+
+<body>
+
+<p id="add"> </p>
+
+</body>
+
+</html>
